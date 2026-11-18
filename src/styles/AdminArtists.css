@@ -1,0 +1,452 @@
+.admin-artists {
+    width: 100%;
+    min-width: 0;
+    padding: 28px;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.admin-artists * {
+    box-sizing: border-box;
+}
+
+.admin-artists-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.admin-artists-header h1 {
+    margin: 0 0 8px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.admin-artists-header p {
+    margin: 0;
+    color: #b3b3b3;
+    font-size: 15px;
+}
+
+.admin-artists-add-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 13px 22px;
+    border: none;
+    border-radius: 28px;
+    background: #1db954;
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.admin-artists-add-btn:hover {
+    background: #1ed760;
+    color: #000;
+    transform: scale(1.02);
+}
+
+.admin-artists-status {
+    width: 100%;
+    padding: 32px 20px;
+    border: 1px solid #292929;
+    border-radius: 12px;
+    background: #181818;
+    color: #b3b3b3;
+    text-align: center;
+    font-size: 15px;
+}
+
+.admin-artists-error {
+    color: #ff7777;
+}
+
+.admin-artists-error button {
+    display: block;
+    margin: 14px auto 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 22px;
+    background: #1db954;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.admin-artists-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.admin-artist-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 26px;
+    width: 100%;
+    min-width: 0;
+    min-height: 180px;
+    padding: 24px 28px;
+    border: 1px solid #2b2b2b;
+    border-radius: 12px;
+    background: #181818;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.admin-artist-card:hover {
+    background: #202020;
+    border-color: #3a3a3a;
+}
+
+.admin-artist-image {
+    display: block;
+    flex-shrink: 0;
+    width: 112px;
+    height: 112px;
+    margin-top: 50px;
+    border-radius: 50%;
+    background: #292929;
+    object-fit: cover;
+}
+
+.admin-artist-details {
+    flex: 1;
+    min-width: 0;
+}
+
+.admin-artist-details h2 {
+    margin: 12px 0;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.admin-artist-category {
+    display: inline-block;
+    margin: 0 0 16px;
+    padding: 7px 13px;
+    border-radius: 20px;
+    background: #292929;
+    color: #1ed760;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.admin-artist-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.admin-artist-meta p {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    min-width: 0;
+    margin: 0;
+    color: #d0d0d0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.admin-artist-meta .admin-artist-followers {
+    align-items: center;
+    gap: 9px;
+}
+
+.admin-artist-followers i {
+    flex-shrink: 0;
+    color: #b3b3b3;
+}
+
+.admin-artist-label {
+    flex-shrink: 0;
+    width: 88px;
+    color: #999;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.admin-artist-value {
+    min-width: 0;
+    color: #d0d0d0;
+}
+
+.admin-artist-popular {
+    width: 100%;
+    max-width: 560px;
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px solid #292929;
+}
+
+.admin-artist-popular-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 28px;
+}
+
+.admin-artist-popular-label {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.admin-artist-popular-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 4px 0;
+    border: none;
+    background: transparent;
+    color: #b3b3b3;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.admin-artist-popular-toggle i {
+    margin-left: 4px;
+    font-size: 12px;
+    transition: color 0.2s ease;
+}
+
+.admin-artist-popular-toggle:hover,
+.admin-artist-popular-toggle:hover i {
+    color: #1ed760;
+}
+
+.admin-artist-popular-content {
+    padding-top: 12px;
+}
+
+.admin-artist-popular-list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.admin-artist-popular-song {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+    padding: 8px 0;
+}
+
+.admin-artist-song-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+    color: #d6d6d6;
+    font-size: 13px;
+}
+
+.admin-artist-song-name i {
+    flex-shrink: 0;
+    color: #1db954;
+    font-size: 13px;
+}
+
+.admin-artist-remove-song {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    color: #b3b3b3;
+    font-size: 19px;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.admin-artist-remove-song:hover {
+    background: #3a2020;
+    color: #ff7777;
+}
+
+.admin-artist-remove-song:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.admin-artist-no-songs {
+    margin: 0;
+    padding: 12px 0;
+    color: #999;
+    font-size: 13px;
+}
+
+.admin-artist-message {
+    margin: 10px 0 0;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.admin-artist-message.is-success {
+    color: #1ed760;
+}
+
+.admin-artist-message.is-error {
+    color: #ff7777;
+}
+
+.admin-artist-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-shrink: 0;
+    margin-left: 16px;
+    align-self: center;
+}
+
+.admin-artist-edit-btn,
+.admin-artist-delete-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.admin-artist-edit-btn {
+    background: #292929;
+    color: #fff;
+}
+
+.admin-artist-edit-btn:hover {
+    background: #1db954;
+    color: #000;
+}
+
+.admin-artist-delete-btn {
+    background: #292929;
+    color: #ff7777;
+}
+
+.admin-artist-delete-btn:hover {
+    background: #e53935;
+    color: #fff;
+}
+
+@media (max-width: 900px) {
+    .admin-artists {
+        padding: 22px;
+    }
+
+    .admin-artist-card {
+        gap: 18px;
+        padding: 22px;
+    }
+
+    .admin-artist-image {
+        width: 90px;
+        height: 90px;
+        margin-top: 72px;
+    }
+
+    .admin-artist-actions {
+        gap: 8px;
+        margin-left: 0;
+    }
+
+    .admin-artist-edit-btn,
+    .admin-artist-delete-btn {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+@media (max-width: 600px) {
+    .admin-artists {
+        padding: 16px;
+    }
+
+    .admin-artists-header {
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .admin-artists-header h1 {
+        font-size: 25px;
+    }
+
+    .admin-artists-header p {
+        font-size: 13px;
+    }
+
+    .admin-artists-add-btn {
+        gap: 7px;
+        padding: 11px 13px;
+        font-size: 13px;
+    }
+
+    .admin-artist-card {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 18px;
+    }
+
+    .admin-artist-image {
+        width: 76px;
+        height: 76px;
+        margin-top: 0;
+    }
+
+    .admin-artist-details {
+        flex: 1 1 calc(100% - 95px);
+    }
+
+    .admin-artist-details h2 {
+        margin-top: 0;
+        margin-bottom: 8px;
+        font-size: 19px;
+    }
+
+    .admin-artist-category {
+        margin-bottom: 12px;
+    }
+
+    .admin-artist-meta p {
+        gap: 10px;
+        font-size: 13px;
+    }
+
+    .admin-artist-label {
+        width: 82px;
+    }
+
+    .admin-artist-popular {
+        max-width: 100%;
+    }
+
+    .admin-artist-actions {
+        justify-content: flex-end;
+        width: 100%;
+    }
+}

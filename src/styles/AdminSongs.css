@@ -1,0 +1,146 @@
+.admin-songs {
+    padding: 2rem;
+    color: white;
+}
+
+.admin-songs-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.admin-songs-header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.admin-songs-header p {
+    margin: 0.4rem 0 0;
+    color: #B3B3B3;
+    font-size: .9rem;
+}
+
+.admin-add-song-btn {
+    background-color: #1DB954;
+    border: none;
+    color: black;
+    padding: 0.8rem 1.2rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.admin-add-song-btn i {
+    margin-right: 0.5rem;
+}
+
+.admin-add-song-btn:hover {
+    background-color: #48e17d;
+}
+
+.admin-songs-search {
+    width: 100%;
+    height: 3rem;
+    background-color: #181818;
+    border: 1px solid #292929;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    margin-bottom: 1.5rem;
+}
+
+.admin-songs-search i {
+    color: #B3B3B3;
+    margin-right: 0.8rem;
+}
+
+.admin-songs-search input {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.admin-songs-search input::placeholder {
+    color: #B3B3B3;
+}
+
+.admin-songs-table-container {
+    background-color: #181818;
+    border: 1px solid #292929;
+    border-radius: .6rem;
+    overflow: auto;
+}
+
+.admin-songs-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-songs-table th {
+    padding: 1rem;
+    text-align: left;
+    color: #B3B3B3;
+    font-size: .8rem;
+    font-weight: 600;
+    border-bottom: 1px solid #292929;
+}
+
+.admin-songs-table td {
+    padding: .8rem 1rem;
+    border-bottom: 1px solid #292929;
+    color: #B3B3B3;
+    font-size: 0.8rem;
+}
+
+.admin-songs-table tbody tr:hover {
+    background-color: #242424;
+}
+
+.admin-song-image {
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: .3rem;
+}
+
+.admin-song-title {
+    color: white;
+    font-weight: 600;
+    max-width: 15rem;
+}
+
+.admin-song-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.admin-song-actions button {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.3rem;
+    border: 1px solid #555;
+    background-color: #121212;
+    color: #B3B3B3;
+    cursor: pointer;
+}
+
+.admin-song-actions button:hover {
+    color: white;
+    border-color: white;
+}
+
+.admin-song-actions .admin-delete-btn:hover {
+    color: #ff5c5c;
+    border-color: #ff5c5c;
+}

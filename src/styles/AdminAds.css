@@ -1,0 +1,589 @@
+.admin-ads {
+    width: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+    padding: 2rem 2.5rem;
+    background-color: #121212;
+    color: #FFFFFF;
+}
+
+.admin-ads * {
+    box-sizing: border-box;
+}
+
+.admin-ads-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 1.75rem;
+}
+
+.admin-ads-eyebrow {
+    margin: 0 0 0.5rem;
+    color: #1DB954;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.admin-ads-header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.admin-ads-subtitle {
+    margin: 0.5rem 0 0;
+    color: #B3B3B3;
+    font-size: 0.9rem;
+}
+
+.admin-ads-add-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 0.8rem 1.4rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: #1DB954;
+    color: #000000;
+    font-size: 0.85rem;
+    font-weight: 700;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.admin-ads-add-btn:hover {
+    background-color: #1ED760;
+    transform: translateY(-1px);
+}
+
+.admin-ads-message,
+.admin-ads-error {
+    margin: 0 0 1.25rem;
+    padding: 0.9rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.admin-ads-message {
+    border: 1px solid #285B39;
+    background-color: #182A1F;
+    color: #1ED760;
+}
+
+.admin-ads-error {
+    border: 1px solid #633333;
+    background-color: #2A1919;
+    color: #FF7777;
+}
+
+.admin-ads-form-card {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 1.6rem;
+    border: 1px solid #292929;
+    border-radius: 0.8rem;
+    background-color: #181818;
+}
+
+.admin-ads-form-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid #292929;
+}
+
+.admin-ads-form-header h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.admin-ads-form-header p {
+    margin: 0.4rem 0 0;
+    color: #B3B3B3;
+    font-size: 0.85rem;
+}
+
+.admin-ads-close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50%;
+    background-color: #292929;
+    color: #B3B3B3;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.admin-ads-close-btn:hover {
+    background-color: #383838;
+    color: #FFFFFF;
+}
+
+.admin-ads-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    margin-bottom: 1.25rem;
+}
+
+.admin-ads-field label {
+    color: #E5E5E5;
+    font-size: 0.84rem;
+    font-weight: 600;
+}
+
+.admin-ads-field input,
+.admin-ads-field textarea {
+    display: block;
+    width: 100%;
+    padding: 0.8rem 0.9rem;
+    border: 1px solid #383838;
+    border-radius: 0.45rem;
+    outline: none;
+    background-color: #242424;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-size: 0.87rem;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.admin-ads-field input {
+    height: 2.9rem;
+}
+
+.admin-ads-field textarea {
+    min-height: 6rem;
+    resize: vertical;
+}
+
+.admin-ads-field input::placeholder,
+.admin-ads-field textarea::placeholder {
+    color: #858585;
+}
+
+.admin-ads-field input:focus,
+.admin-ads-field textarea:focus {
+    border-color: #1DB954;
+    background-color: #282828;
+}
+
+.admin-ads-preview {
+    display: block;
+    width: 180px;
+    max-width: 100%;
+    max-height: 140px;
+    margin: 0 0 1.25rem;
+    border: 1px solid #383838;
+    border-radius: 0.5rem;
+    background-color: #242424;
+    object-fit: cover;
+}
+
+.admin-ads-checkbox {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    margin: 0.1rem 0 1.3rem;
+    color: #E5E5E5;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.admin-ads-checkbox input {
+    width: 17px;
+    height: 17px;
+    accent-color: #1DB954;
+    cursor: pointer;
+}
+
+.admin-ads-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.8rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid #292929;
+}
+
+.admin-ads-cancel-btn,
+.admin-ads-save-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.75rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.admin-ads-cancel-btn {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+.admin-ads-cancel-btn:hover:not(:disabled) {
+    background-color: #444444;
+}
+
+.admin-ads-save-btn {
+    background-color: #1DB954;
+    color: #000000;
+}
+
+.admin-ads-save-btn:hover:not(:disabled) {
+    background-color: #1ED760;
+}
+
+.admin-ads-cancel-btn:disabled,
+.admin-ads-save-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.admin-ads-summary {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.admin-ads-summary-card {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 0.65rem;
+    min-width: 0;
+    padding: 1.25rem 1.4rem;
+    border: 1px solid #292929;
+    border-radius: 0.7rem;
+    background-color: #181818;
+}
+
+.admin-ads-summary-card span {
+    color: #B3B3B3;
+    font-size: 0.85rem;
+}
+
+.admin-ads-summary-card strong {
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.admin-ads-list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.admin-ads-list-header h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.admin-ads-list-header span {
+    color: #B3B3B3;
+    font-size: 0.85rem;
+}
+
+.admin-ads-status {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.7rem;
+    width: 100%;
+    padding: 3rem 1.5rem;
+    border: 1px solid #292929;
+    border-radius: 0.8rem;
+    background-color: #181818;
+    color: #B3B3B3;
+    text-align: center;
+}
+
+.admin-ads-status>i {
+    color: #1DB954;
+    font-size: 2rem;
+}
+
+.admin-ads-status h3 {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 1.1rem;
+}
+
+.admin-ads-status p {
+    margin: 0 0 0.5rem;
+    font-size: 0.85rem;
+}
+
+.admin-ads-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.admin-ad-card {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    width: 100%;
+    min-width: 0;
+    padding: 1.4rem;
+    border: 1px solid #292929;
+    border-radius: 0.8rem;
+    background-color: #181818;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.admin-ad-card:hover {
+    border-color: #3A3A3A;
+    background-color: #1E1E1E;
+}
+
+.admin-ad-image-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 150px;
+    height: 110px;
+    overflow: hidden;
+    border-radius: 0.55rem;
+    background-color: #242424;
+}
+
+.admin-ad-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.admin-ad-image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #777777;
+    font-size: 1.7rem;
+}
+
+.admin-ad-details {
+    flex: 1;
+    min-width: 0;
+}
+
+.admin-ad-title-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.admin-ad-title-row h3 {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 1.1rem;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.admin-ad-status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 0.35rem 0.7rem;
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+}
+
+.admin-ad-status.is-active {
+    border-color: #285B39;
+    background-color: #203B2A;
+    color: #1ED760;
+}
+
+.admin-ad-status.is-inactive {
+    border-color: #454545;
+    background-color: #292929;
+    color: #B3B3B3;
+}
+
+.admin-ad-description {
+    margin: 0.65rem 0 1rem;
+    color: #B3B3B3;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.admin-ad-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.admin-ad-status-btn,
+.admin-ad-edit-btn,
+.admin-ad-delete-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    min-height: 2.25rem;
+    padding: 0.55rem 0.85rem;
+    border: 1px solid #383838;
+    border-radius: 2rem;
+    background-color: #242424;
+    font-family: inherit;
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.admin-ad-status-btn {
+    color: #1ED760;
+}
+
+.admin-ad-status-btn:hover {
+    background-color: #203B2A;
+}
+
+.admin-ad-edit-btn {
+    color: #FFFFFF;
+}
+
+.admin-ad-edit-btn:hover {
+    border-color: #1DB954;
+    background-color: #203B2A;
+    color: #1ED760;
+}
+
+.admin-ad-delete-btn {
+    color: #FF7777;
+}
+
+.admin-ad-delete-btn:hover {
+    border-color: #713535;
+    background-color: #3A2020;
+}
+
+@media (max-width: 900px) {
+    .admin-ads {
+        padding: 1.5rem;
+    }
+
+    .admin-ad-card {
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 1.1rem;
+    }
+
+    .admin-ad-image-wrap {
+        width: 120px;
+        height: 95px;
+    }
+
+    .admin-ads-summary-card {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .admin-ads {
+        padding: 1rem;
+    }
+
+    .admin-ads-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .admin-ads-header h1 {
+        font-size: 1.7rem;
+    }
+
+    .admin-ads-form-card {
+        padding: 1rem;
+    }
+
+    .admin-ads-summary {
+        flex-wrap: wrap;
+    }
+
+    .admin-ads-summary-card {
+        flex: 1 1 calc(50% - 0.5rem);
+    }
+
+    .admin-ad-card {
+        flex-direction: column;
+    }
+
+    .admin-ad-image-wrap {
+        width: 100%;
+        height: 170px;
+    }
+
+    .admin-ad-details {
+        width: 100%;
+    }
+
+    .admin-ad-actions {
+        gap: 0.5rem;
+    }
+
+    .admin-ad-status-btn,
+    .admin-ad-edit-btn,
+    .admin-ad-delete-btn {
+        padding: 0.55rem 0.7rem;
+    }
+
+    .admin-ads-form-actions {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 400px) {
+    .admin-ads-summary-card {
+        flex-basis: 100%;
+    }
+
+    .admin-ads-form-actions {
+        flex-direction: column-reverse;
+    }
+
+    .admin-ads-cancel-btn,
+    .admin-ads-save-btn {
+        width: 100%;
+    }
+}

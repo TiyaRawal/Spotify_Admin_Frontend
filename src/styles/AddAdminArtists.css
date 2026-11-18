@@ -1,0 +1,403 @@
+.add-admin-artist {
+    width: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+    padding: 2rem 2.5rem;
+    background-color: #121212;
+    color: #FFFFFF;
+}
+
+.add-admin-artist * {
+    box-sizing: border-box;
+}
+
+.add-admin-artist-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 1.75rem;
+}
+
+.add-admin-artist-header h1 {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.add-admin-artist-header p {
+    margin: 0.5rem 0 0;
+    color: #B3B3B3;
+    font-size: 0.9rem;
+}
+
+.add-admin-artist-back {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 0.8rem 1.25rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: #1DB954;
+    color: #000000;
+    font-size: 0.85rem;
+    font-weight: 700;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.add-admin-artist-back:hover {
+    background-color: #1ED760;
+    transform: translateY(-1px);
+}
+
+.add-admin-artist-form {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 1.6rem;
+    border: 1px solid #292929;
+    border-radius: 0.8rem;
+    background-color: #181818;
+}
+
+.add-admin-artist-section {
+    width: 100%;
+    margin-bottom: 1.75rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #292929;
+}
+
+.add-admin-artist-section:last-of-type {
+    margin-bottom: 1.25rem;
+}
+
+.add-admin-artist-section h2 {
+    margin: 0 0 1.25rem;
+    color: #FFFFFF;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.add-admin-artist-help {
+    margin: -0.6rem 0 1.1rem;
+    color: #B3B3B3;
+    font-size: 0.82rem;
+    line-height: 1.5;
+}
+
+.add-admin-artist-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    min-width: 0;
+    margin-bottom: 1.25rem;
+}
+
+.add-admin-artist-field label {
+    color: #E5E5E5;
+    font-size: 0.84rem;
+    font-weight: 600;
+}
+
+.add-admin-artist-field input,
+.add-admin-artist-field select {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    height: 2.9rem;
+    padding: 0.8rem 0.9rem;
+    border: 1px solid #383838;
+    border-radius: 0.45rem;
+    outline: none;
+    background-color: #242424;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-size: 0.87rem;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.add-admin-artist-field input:hover,
+.add-admin-artist-field select:hover {
+    border-color: #555555;
+}
+
+.add-admin-artist-field input:focus,
+.add-admin-artist-field select:focus {
+    border-color: #1DB954;
+    background-color: #282828;
+}
+
+.add-admin-artist-field input::placeholder {
+    color: #858585;
+}
+
+.add-admin-artist-field select option,
+.add-admin-artist-song-selector select option {
+    background-color: #242424;
+    color: #FFFFFF;
+}
+
+.add-admin-artist-field select:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.add-admin-artist-row {
+    display: flex;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.add-admin-artist-row .add-admin-artist-field {
+    flex: 1 1 40%;
+}
+
+.add-admin-artist-preview {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-top: 0.4rem;
+    border: 1px solid #383838;
+    border-radius: 50%;
+    background-color: #242424;
+    object-fit: cover;
+}
+
+.add-admin-artist-song-selector {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+}
+
+.add-admin-artist-song-selector select {
+    flex: 1;
+    min-width: 0;
+    height: 2.9rem;
+    padding: 0 0.9rem;
+    border: 1px solid #383838;
+    border-radius: 0.45rem;
+    outline: none;
+    background-color: #242424;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-size: 0.87rem;
+}
+
+.add-admin-artist-song-selector select:focus {
+    border-color: #1DB954;
+}
+
+.add-admin-artist-add-song {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-shrink: 0;
+    min-height: 2.9rem;
+    padding: 0.75rem 1.1rem;
+    border: none;
+    border-radius: 0.45rem;
+    background-color: #1DB954;
+    color: #000000;
+    font-size: 0.85rem;
+    font-weight: 700;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.add-admin-artist-add-song:hover:not(:disabled) {
+    background-color: #1ED760;
+}
+
+.add-admin-artist-add-song:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.add-admin-artist-selected-songs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1.1rem;
+}
+
+.add-admin-artist-selected-song {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.9rem;
+    min-width: 0;
+    padding: 0.7rem 0.8rem;
+    border: 1px solid #292929;
+    border-radius: 0.45rem;
+    background-color: #242424;
+}
+
+.add-admin-artist-selected-song span {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    min-width: 0;
+    color: #E5E5E5;
+    font-size: 0.87rem;
+}
+
+.add-admin-artist-selected-song span i {
+    flex-shrink: 0;
+    color: #1DB954;
+}
+
+.add-admin-artist-selected-song button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    color: #B3B3B3;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.add-admin-artist-selected-song button:hover {
+    background-color: #3A2020;
+    color: #FF7777;
+}
+
+.add-admin-artist-empty-songs {
+    margin: 0.9rem 0 0;
+    color: #858585;
+    font-size: 0.82rem;
+}
+
+.add-admin-artist-error {
+    margin: 0 0 1.1rem;
+    color: #FF7777;
+    font-size: 0.87rem;
+    line-height: 1.5;
+}
+
+.add-admin-artist-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.8rem;
+    width: 100%;
+    margin-top: 0.25rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid #292929;
+}
+
+.add-admin-artist-cancel,
+.add-admin-artist-submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 2.75rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.add-admin-artist-cancel {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+.add-admin-artist-cancel:hover:not(:disabled) {
+    background-color: #444444;
+}
+
+.add-admin-artist-submit {
+    background-color: #1DB954;
+    color: #000000;
+}
+
+.add-admin-artist-submit:hover:not(:disabled) {
+    background-color: #1ED760;
+    transform: translateY(-1px);
+}
+
+.add-admin-artist-cancel:disabled,
+.add-admin-artist-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+@media (max-width: 700px) {
+    .add-admin-artist {
+        padding: 1.25rem;
+    }
+
+    .add-admin-artist-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .add-admin-artist-header h1 {
+        font-size: 1.7rem;
+    }
+
+    .add-admin-artist-form {
+        padding: 1.1rem;
+    }
+
+    .add-admin-artist-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .add-admin-artist-row .add-admin-artist-field {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .add-admin-artist {
+        padding: 0.8rem;
+    }
+
+    .add-admin-artist-form {
+        padding: 1rem;
+    }
+
+    .add-admin-artist-song-selector {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .add-admin-artist-song-selector select,
+    .add-admin-artist-add-song {
+        width: 100%;
+    }
+
+    .add-admin-artist-actions {
+        justify-content: flex-end;
+        flex-direction: row;
+        gap: 0.6rem;
+    }
+
+    .add-admin-artist-cancel,
+    .add-admin-artist-submit {
+        flex: 1;
+        min-width: 0;
+        padding: 0.75rem 0.9rem;
+    }
+}
